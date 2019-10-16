@@ -1,101 +1,42 @@
 {
   "name": "ngx-toastr",
-  "description": "Toastr for Angular",
+  "version": "10.1.1",
+  "peerDependencies": {
+    "@angular/core": ">=8.0.0-0",
+    "@angular/common": ">=8.0.0-0",
+    "@angular/platform-browser": ">=8.0.0-0",
+    "rxjs": "^6.5.0"
+  },
+  "repository": "scttcper/ngx-toastr",
   "homepage": "https://github.com/scttcper/ngx-toastr",
   "bugs": "https://github.com/scttcper/ngx-toastr/issues",
-  "repository": "scttcper/ngx-toastr",
-  "version": "0.0.0-placeholder",
   "license": "MIT",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ts-node -O '{\"module\": \"commonjs\"}' build.ts",
-    "test": "ng test --watch=false",
-    "test:watch": "ng test",
-    "test:ci": "ng test --watch=false --code-coverage --no-progress",
-    "lint": "ng lint",
-    "lint:fix": "ng lint --fix",
-    "ghpages": "ng build --prod --no-progress",
-    "e2e": "ng e2e",
-    "bundlesize": "npx bundlesize",
-    "semantic-release": "cd dist && semantic-release"
-  },
-  "private": true,
+  "description": "Toastr for Angular",
+  "keywords": [
+    "ng2",
+    "ngx",
+    "ngx-toastr",
+    "toastr-ng2",
+    "angular",
+    "angular2",
+    "typescript",
+    "alert",
+    "toast",
+    "toastr",
+    "angular toastr",
+    "notifications"
+  ],
+  "main": "bundles/ngx-toastr.umd.js",
+  "module": "fesm5/ngx-toastr.js",
+  "es2015": "fesm2015/ngx-toastr.js",
+  "esm5": "esm5/ngx-toastr.js",
+  "esm2015": "esm2015/ngx-toastr.js",
+  "fesm5": "fesm5/ngx-toastr.js",
+  "fesm2015": "fesm2015/ngx-toastr.js",
+  "typings": "ngx-toastr.d.ts",
+  "metadata": "ngx-toastr.metadata.json",
+  "sideEffects": false,
   "dependencies": {
-    "@angular/animations": "7.2.15",
-    "@angular/common": "7.2.15",
-    "@angular/compiler": "7.2.15",
-    "@angular/core": "7.2.15",
-    "@angular/forms": "7.2.15",
-    "@angular/http": "7.2.15",
-    "@angular/platform-browser": "7.2.15",
-    "@angular/platform-browser-dynamic": "7.2.15",
-    "@angular/router": "7.2.15",
-    "@ctrl/ngx-github-buttons": "2.1.6",
-    "bootstrap": "4.3.1",
-    "core-js": "2.6.9",
-    "lodash-es": "4.17.15",
-    "rxjs": "6.5.2",
-    "zone.js": "0.9.1"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "0.13.9",
-    "@angular/cli": "7.3.9",
-    "@angular/compiler-cli": "7.2.15",
-    "@angular/language-service": "7.2.15",
-    "@types/fs-extra": "5.1.0",
-    "@types/jasmine": "3.3.16",
-    "@types/jasminewd2": "2.0.6",
-    "@types/lodash-es": "4.17.3",
-    "@types/node": "12.0.12",
-    "@types/rimraf": "2.0.2",
-    "codelyzer": "5.0.1",
-    "fs-extra": "7.0.1",
-    "jasmine-core": "3.4.0",
-    "jasmine-spec-reporter": "4.2.1",
-    "karma": "4.1.0",
-    "karma-chrome-launcher": "2.2.0",
-    "karma-cli": "2.0.0",
-    "karma-coverage-istanbul-reporter": "2.0.6",
-    "karma-jasmine": "2.0.1",
-    "karma-jasmine-html-reporter": "1.4.2",
-    "karma-mocha-reporter": "2.2.5",
-    "ng-packagr": "5.1.0",
-    "protractor": "5.4.2",
-    "rimraf": "2.6.3",
-    "semantic-release": "^15.13.20",
-    "ts-node": "8.1.1",
-    "tsickle": "0.35.0",
-    "tslint": "5.16.0",
-    "typescript": "3.2.4"
-  },
-  "release": {
-    "branch": "master"
-  },
-  "bundlesize": [
-    {
-      "path": "./dist/bundles/ngx-toastr.umd.min.js",
-      "maxSize": "5 kB"
-    },
-    {
-      "path": "./dist/esm2015/ngx-toastr.js",
-      "maxSize": "8 kB"
-    },
-    {
-      "path": "./dist/esm5/ngx-toastr.js",
-      "maxSize": "8 kB"
-    },
-    {
-      "path": "./dist/toastr.css",
-      "maxSize": "5 kB"
-    },
-    {
-      "path": "./dist/toastr-old.css",
-      "maxSize": "5 kB"
-    },
-    {
-      "path": "./dist/toastr-bs4-alert.scss",
-      "maxSize": "5 kB"
-    }
-  ]
+    "tslib": "^1.9.0"
+  }
 }
